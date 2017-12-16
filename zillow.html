@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+@-ms-viewport{
+  width: device-width;
+}
+
+
+body{margin: 0;
+    background-image: url("image.gif");
+    background-size: cover; 
+  background-repeat: no-repeat;
+  background-size: 1450px 625px;
+
+}
+
+.back{
+  background-color:rgba(130, 117, 120,0.4);
+  height:600px;
+}
+head{ position: top;
+ }
+ .hello a{
+  font-family:Verdana;
+   text-align: center;
+    display:block;
+  
+    
+    font-size: 16px;
+ color:white;
+}
+.hello a.active {
+  background-color: #286fe2;
+ color:white
+}
+
+.hello a:hover{e
+background-color: #286fe2;
+color:white;
+}
+ 
+h1{
+  font-family:Gotham,Verdana,sans-serif;
+
+      text-align:center;
+      font-size:48px;
+      text-shadow: #666;
+    
+      margin-top: 135px;
+      margin-bottom: 10px;
+float: top;
+color:white;
+  font-weight: 100;
+}
+ul {
+    list-style-type: none;
+    margin:0;
+   padding-left:25px;
+    overflow: hidden;
+    background-color: #ffffff;
+
+position: top;
+}
+
+li { 
+    float: left;
+
+}
+
+ a {font-family:Verdana;
+   text-align: center;
+    display:block;
+    font-weight: 500;
+    color: black;
+  
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 14px;
+
+
+}
+ a:hover {
+    color: blue;
+
+
+}
+a.active{
+  color:#286fe2;
+
+  border-bottom: solid;
+  border-bottom-width:5px;
+  border-color: #286fe2;
+
+}
+#text{font-family:Verdana;
+  font-size: 14px;
+  color:   #4286f4;
+
+}
+#text:hover{
+  color:grey;
+
+}
+#h{font-family:Verdana;
+  text-align: center;
+    display:block;
+  color:black;
+   padding-top: 14px;
+   padding-left:1px;
+
+}
+.nav_middle{
+list-style-type: none;
+  width:604px;
+  height: 53px;
+   padding:0;
+   margin-left:350px;
+    overflow: hidden;
+background-color:rgba(0,0,0,0.4);
+
+}
+
+.middle{
+  width:150px;
+  border-color: white;
+    border-width: 0.5px;
+    border-style:solid;
+color:white;
+  }
+
+ .lower{
+  height:70px;
+  background-color:rgba(0, 26, 73,0.8);
+  margin-top:160px;
+
+
+
+  vertical-align: middle;
+  list-style-type: none;
+  
+   padding-left:25px;
+    overflow: hidden;
+
+position: top;
+
+}
+.lowertext{
+    
+}
+#nohover{
+background-color: initial;
+font-size: 18px;
+}
+
+
+
+#image{
+  margin-left:75px;
+   width:45px;
+   height:45px;
+   margin-top: 10px;
+}
+.button {
+ 
+    border: none;
+  border-radius: 10px;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left:375px;
+      margin-top:10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2{
+    background-color: #286fe2; 
+    color:white; 
+
+}
+.button2:hover {
+    background-color:#0c51ce ;
+    color: ;
+}
+.form-wrapper{
+  list-style-type: none;
+  width:595px;
+  height: 55px;
+   margin-top:0px;
+   margin-left:350px;
+    overflow: hidden;
+background-color:white;
+ border-radius: 5px;
+ padding-left: 10px;
+ padding-right: 0;
+ border:none;
+padding-bottom: 5px;
+}
+.search-btn{
+
+    border: none;
+  border-radius: 5px;
+height:40px;
+width:110px;
+
+
+font-family: Verdana;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #286fe2; 
+    color:white; 
+    cursor: pointer;
+   
+}
+.field{
+ height:60px;
+ width:440px;
+ padding-right: 32px;
+border: none;
+ font-size: 18px;
+border:none;
+}
+.question{
+  height: 5px;
+  width: 5px;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+    visibility:visible;
+    
+}
+
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+margin-left: 420px;
+
+margin-top:-15px;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+        
+}
+
+.details{
+  background-color: #eee;
+font-family:Verdana;
+
+  width:600;
+  margin-top: 15px;
+  padding-top:10px ;
+padding-left: 60px;
+padding-bottom: 25px;
+}
+.details a{
+  color:#444444;
+  font-size: 12px;
+text-align: left;
+ padding:0;
+    text-decoration: none;
+   
+
+color:#444444;
+}
+.details a:hover{
+
+color:blue;
+}
+.footer{text-align: center;
+  background-color: black;
+
+ padding:0;
+ height:150px;
+
+}
+.footer a{
+  color:#;
+  font-size: 12px;
+  margin-left: 10px;
+
+     text-decoration: none;
+   text-align: center;
+font-style: bold;
+color:#999;
+font-weight: 600;
+}
+.footer a:hover{
+  color:blue;
+}
+.footer ul{
+  background-color: black;
+  margin-left:200px;
+
+}
+
+.footer1 a{
+font-size: 12px;
+padding-top:0;
+padding-left: 10px;
+font-weight: 600;
+}
+.footer1 ul{
+  margin-left: 25px;
+
+}
+
+
+table { font-family: Verdana;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+td {color:#444444;
+    
+    text-align: left;
+padding-left: :20px;
+}
+th{color:#444444;
+    
+    text-align: left;
+  font-size:12px;
+  font-style: bold;
+    padding-top: 20px;
+    padding-left: :20px;
+}
+.line{background-color: #999;
+  height:1px;
+width:100%;
+
+}
+.footer #h{
+  color:#999;
+  font-size: 12px;
+  padding-top:16px;
+
+}
+
+</style>
+<title>Zillow:Real Estate,Apartmets,Mortgages & Home values</title>
+</head>
+<body>
+<div class="back">
+<li><img src="logo.jpg" id="logo"></li>
+<ul>
+
+  <li><a class="active"  href="#Buy">Buy</a>    </li>
+
+  
+  <li><a  href="#Rent">Rent</a>    </li>
+
+
+
+  <li><a href="#sell">Sell</a>    </li>
+
+
+
+  <li><a class="dropbtn"  href="#mortgages">Mortgages</a>    </li>
+
+
+
+  <li><a  href="#Agentfinder">Agent Finder</a>    </li>
+
+ 
+
+  <li><a  href="#listyourrental">List your rental</a>    </li>
+
+    
+ 
+
+
+  <li><a   href="#Homedesign">Home Design</a>    </li>
+
+  
+ 
+  <li><a  href="#more">More</a>    </li>
+
+
+
+  <li><a></a>                   </li>
+    <li><a></a>                   </li>
+      <li><a></a>                   </li>
+
+  <li></li>
+  <li></li>
+ 
+   <li><a href=#Advertise id="text"> Advertise </a></li>
+      <li><a href=#Signin id="text"> Sign in </a></li>
+      <li id="h" >or</li>
+    <li><a href=#Join id="text">Join</a></li>
+
+
+
+  </ul>
+
+<h1>Find your way home<sup>&reg</sup></h1>
+<div class="hello">
+
+<ul class="nav_middle">
+  <li class="middle" ><a  class="active tooltip" href="#Buy">Buy</a></li>
+  <li class="middle"><a  href="#rent" >Rent</a></li>
+  <li class="middle"><a href="#sell" >Sell</a></li>
+  <li class="middle"><a href="#zestimate">Zestimate</a></li>
+
+  </ul>
+  <div class="tooltip">
+  <span class="tooltiptext"></span>
+  </div>
+  <div class="search_box">
+
+<form class="form-wrapper">
+<input  class ="field" type="text" placeholder="&nbsp Enter an address, neighborhood, city or ZIP code" required>
+<button  class="search-btn" type="submit">Search</button>
+</form>
+</div>
+
+  <div class="lower">
+
+ <li> <img  src="approve.png" id="image" alt="Approve" ></li>
+  <li ><a id="nohover" href="#Buy"><b>Be ready to buy</b>Get pre-approved by a local lender on Zillow.</a></li>
+  <li><button class="button button2">Get Started</button></li>
+
+</div>
+
+</div>
+</div>
+</body>
+<div class="details">
+<table>
+  <tr>
+    <th>REAL ESTATE</th>
+    <th>RENTALS</th>
+    <th>MORTGAGE RATES</th>
+     <th>BROWSE</th>
+  </tr>
+  <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+    <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr> 
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr> 
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>  
+  <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr> 
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+    <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+    <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr> 
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+   <tr>
+    <td> <a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsumloremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+   <td><a class="details" href="#loremipsum">loremipsum</a></td>
+  </tr>
+</table>
+</div>
+
+
+<div class="footer">
+
+<div>
+<ul>
+  <li><a href="#Buy">Zillow Group® </a></li>
+    <li id="h" >Brands: </li>
+  <li><a href="#rent">Trulia</a></li>
+    <li id="h" > | </li>
+  <li><a href="#sell">StreetEasy</a></li>
+    <li id="h" > | </li>
+  <li><a href="#mortgages">HotPads</a></li>
+    <li id="h" > | </li>
+  <li><a href="#Agentfinder">Naked Apartments</a></li>
+    <li id="h" > | </li>
+  <li><a href="#Homedesign">RealEstate.com</a></li>
+
+  
+
+  </ul>
+  </div>
+  <div class="footer1">
+  <ul>
+    <li><a href="#Buy">ABOUT </a></li>
+
+  <li><a href="#rent">ZESTIMATES</a></li>
+ 
+  <li><a href="#sell">RESEARCH</a></li>
+ 
+  <li><a href="#mortgages">CAREERS</a></li>
+
+  <li><a href="#Agentfinder">HELP</a></li>
+   
+  <li><a href="#Homedesign">ADVERTISE</a></li>
+
+   <li><a href="#Homedesign">TERMS OF USE & PRIVACY</a></li>
+    <li><a href="#Homedesign">AD CHOICE</a></li>
+   
+
+     <li><a href="#Homedesign">BLOG</a></li>
+
+
+     <li><a href="#Homedesign">DATASCIENCE</a></li>
+
+     <li><a href="#Homedesign">MOBILE APPS</a></li>
+</ul>
+  </div>
+  <div class="line">
+  </div>
+  <div class="last">
+  <div class="footer1">
+  <ul>
+    <li><img src="asdasd"alt="home"></li>
+     <li><a></a>                   </li>
+    <li><a></a>                   </li>
+      <li><a></a>                   </li>
+       <li><a></a>                   </li>
+    <li><a></a>                   </li>
+      <li><a></a>                   </li>
+       <li><a></a>                   </li>
+    <li><a></a>                   </li>
+      <li><a></a>                   </li>s
+
+   <li id="h"> © 2006-2017 Zillow Faris Abdul Raheem </li>
+ 
+   <li id="h">&nbsp &nbsp Follow us </li>
+  <li><button class="fb"> </button></li>
+  <li><button class="twitter"> </button></li>
+  <li><button class="gplus"> </button></li>
+
+</ul>
+
+  </div>
+</div>
+</html>
